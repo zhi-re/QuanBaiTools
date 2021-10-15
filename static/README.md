@@ -1,1 +1,1 @@
-> [https://miku.tools](https://miku.tools)
+> [https://tools.quanbai.com](https://tools.quanbai.com)

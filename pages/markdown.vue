@@ -54,16 +54,16 @@ export default {
                 this.isMobile = true;
             }
         }
-        this.$nextTick(() => {
-            this.$refs.md.markdownIt.set({
-                highlight: function(str, lang) {
-                    if (lang && hljs.getLanguage(lang)) {
-                        return hljs.highlight(lang, str).value;
-                    }
-                    return '';
-                }
-            });
-        });
+        // this.$nextTick(() => {
+        //     this.$refs.md.markdownIt.set({
+        //         highlight: function(str, lang) {
+        //             if (lang && hljs.getLanguage(lang)) {
+        //                 return hljs.highlight(lang, str).value;
+        //             }
+        //             return '';
+        //         }
+        //     });
+        // });
     },
     methods: {
         downloadHtml() {

@@ -1,7 +1,7 @@
 import low from 'lowdb';
 import LocalStorage from 'lowdb/adapters/LocalStorage';
 import Vue from 'vue';
-const adapter = new LocalStorage('mikudb');
+const adapter = new LocalStorage('quanbaidb');
 const db = low(adapter);
 
 db.defaults({

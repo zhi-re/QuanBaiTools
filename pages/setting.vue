@@ -7,13 +7,13 @@
         </nya-container>
 
         <nya-container title="自定义 JS">
-            <nya-input :value="$store.state.setting.js" fullwidth rows="5" type="textarea" autocomplete="off" placeholder="alert('欢迎使用 MikuTools')" @change="handleChange('setting.js', $event.target.value)" />
+            <nya-input :value="$store.state.setting.js" fullwidth rows="5" type="textarea" autocomplete="off" placeholder="alert('欢迎使用 QuanBaiTools')" @change="handleChange('setting.js', $event.target.value)" />
         </nya-container>
 
         <nya-container title="其他设置">
             <nya-checkbox :checked="$store.state.setting.hideNotice" label="隐藏公告" @change="handleChange('setting.hideNotice', $event)" />
             <nya-checkbox :checked="$store.state.setting.hideCategory" label="隐藏分类" @change="handleChange('setting.hideCategory', $event)" />
-            <nya-checkbox :checked="$store.state.setting.hidePay" label="隐藏打赏" @change="handleChange('setting.hidePay', $event)" />
+<!--            <nya-checkbox :checked="$store.state.setting.hidePay" label="隐藏打赏" @change="handleChange('setting.hidePay', $event)" />-->
             <nya-checkbox :checked="$store.state.setting.inNewTab" label="新标签打开工具" @change="handleChange('setting.inNewTab', $event)" />
             <nya-checkbox :checked="$store.state.setting.animations" label="启用过渡动画" @change="handleChange('setting.transition', $event)" />
         </nya-container>
@@ -88,8 +88,8 @@ export default {
             this.$noty.success('导入成功');
         },
         clearCache() {
-            localStorage.removeItem('mikudb');
-            localStorage.removeItem('miku_vuex');
+            localStorage.removeItem('quanbaidb');
+            localStorage.removeItem('quanbai_vuex');
             alert('清除成功，即将刷新页面');
             window.location.reload();
         }

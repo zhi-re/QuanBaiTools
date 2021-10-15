@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - "10"
-script: 
+script:
   - echo "hello world"
 install:
   - yarn install
@@ -12,8 +12,8 @@ cache:
 after_script:
   - cd ./dist
   - git init
-  - git config user.name "Ice-Hazymoon"
-  - git config user.email "imiku.me@gmail.com"
+  - git config user.name "chenqi"
+  - git config user.email "chenqi@live.hk"
   - git add .
   - git commit -m "automated build"
-  - git push --quiet --force https://${REPO_TOKEN}@github.com/Ice-Hazymoon/MikuTools.git master
+  - git push --quiet --force https://${REPO_TOKEN}@github.com/zhi-re/QuanBaiTools.git master

@@ -5,6 +5,14 @@ export const state = () => {
             icon: 'layers-outline',
             list: [
                 {
+                    name: '全是废话',
+                    path: '/uselessSpeak',
+                    head: {
+                        keywords: ['useless'],
+                        description: 'useless'
+                    }
+                },
+                {
                     name: '屏幕录制',
                     path: '/screen_record',
                     head: {
@@ -488,21 +496,21 @@ export const state = () => {
                         description: 'UserAgent 解析'
                     }
                 },
-                {
-                    name: '前端 CDN 查询',
-                    path: '/cdnjs',
-                    head: {
-                        keywords: [
-                            '前端CDN',
-                            'CDNJS',
-                            'BootCDN',
-                            'CSS.NET',
-                            'Baomitu CDN',
-                            'Staticfile CDN'
-                        ],
-                        description: '前端CDN库查询'
-                    }
-                },
+                // {
+                //     name: '前端 CDN 查询',
+                //     path: '/cdnjs',
+                //     head: {
+                //         keywords: [
+                //             '前端CDN',
+                //             'CDNJS',
+                //             'BootCDN',
+                //             'CSS.NET',
+                //             'Baomitu CDN',
+                //             'Staticfile CDN'
+                //         ],
+                //         description: '前端CDN库查询'
+                //     }
+                // },
                 {
                     name: 'JSON 编辑器',
                     path: '/json_editor',
@@ -558,8 +566,8 @@ export const state = () => {
             }
             if (tool.head.keywords) {
                 tool.head.keywords = tool.head.keywords.concat([
-                    'MikuTools',
-                    'Ice-Hazymoon',
+                    '全百工具',
+                    'chenqi',
                     '在线工具'
                 ]);
                 head.meta.push({

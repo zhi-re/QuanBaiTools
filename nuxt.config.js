@@ -24,7 +24,7 @@ module.exports = {
      ** Headers of the page
      */
     head: {
-        title: `MikuTools - 一个轻量的工具集合`,
+        title: `全百工具`,
         meta: [
             {
                 charset: 'utf-8'
@@ -48,7 +48,7 @@ module.exports = {
             {
                 hid: 'author',
                 name: 'author',
-                content: 'Ice-Hazymoon'
+                content: 'chenqi'
             },
             {
                 name: 'HandheldFriendly',
@@ -56,7 +56,7 @@ module.exports = {
             },
             {
                 property: 'og:site_name',
-                content: 'MikuTools'
+                content: 'QuanBaiTools'
             },
             {
                 name: 'mobile-web-app-capable',
@@ -64,7 +64,7 @@ module.exports = {
             },
             {
                 name: 'apple-mobile-web-app-title',
-                content: 'MikuTools'
+                content: 'QuanBaiTools'
             },
             {
                 name: 'apple-mobile-web-app-status-bar-style',
@@ -213,8 +213,8 @@ module.exports = {
     manifest: {
         description: '收集实用的小工具',
         display: 'standalone',
-        name: 'MikuTools',
-        short_name: 'MikuTools',
+        name: 'QuanBaiTools',
+        short_name: 'QuanBaiTools',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#ffffff',

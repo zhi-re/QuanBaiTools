@@ -46,26 +46,12 @@ export default {
             title: `友情链接 - ${process.env.title}`,
             links: [
                 {
-                    title: '主要维护人员',
+                    title: '维护',
                     list: [
                         {
-                            name: 'Ice-Hazymoon',
-                            description: '聆听最初的声音，向往无尽的未来',
-                            link: 'https://imiku.me'
-                        },
-                        {
-                            name: 'KeJun',
-                            description: '维护人员',
-                            link: 'https://kejun.me/'
-                        },
-                        {
-                            name: 'Tamshen',
-                            description: '图标设计',
-                            link: 'http://tamshen.com'
-                        },
-                        {
-                            name: 'So',
-                            description: '不知道干啥的'
+                            name: 'quanbai',
+                            description: '全心 百分',
+                            link: 'https://quanbai.com'
                         }
                     ]
                 },
@@ -74,13 +60,8 @@ export default {
                     list: [
                         {
                             name: 'GitHub地址',
-                            description: '给个 star 呗',
-                            link: 'https://github.com/Ice-Hazymoon/MikuTools'
-                        },
-                        {
-                            name: '服务器提供商（注册送 50 美元余额）',
-                            description: 'vultr',
-                            link: 'https://www.vultr.com/?ref=7943329-4F'
+                            description: 'QuanBaiTools',
+                            link: 'https://github.com/zhi-re/QuanBaiTools'
                         }
                     ]
                 }
