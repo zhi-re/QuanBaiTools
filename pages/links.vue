@@ -19,16 +19,16 @@
                     </li>
                 </ul>
             </div>
-            <div>
-                <div class="nya-subtitle">
-                    感谢以下项目(未全部列出)
-                </div>
-                <ul class="nya-list">
-                    <li v-for="(item, index) in project" :key="index">
-                        <a :href="item" target="_blank" rel="noopener noreferrer">{{ item }}</a>
-                    </li>
-                </ul>
-            </div>
+<!--            <div>-->
+<!--                <div class="nya-subtitle">-->
+<!--                    感谢以下项目(未全部列出)-->
+<!--                </div>-->
+<!--                <ul class="nya-list">-->
+<!--                    <li v-for="(item, index) in project" :key="index">-->
+<!--                        <a :href="item" target="_blank" rel="noopener noreferrer">{{ item }}</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
         </nya-container>
     </div>
 </template>
@@ -49,7 +49,7 @@ export default {
                     title: '维护',
                     list: [
                         {
-                            name: 'quanbai',
+                            name: '全百',
                             description: '全心 百分',
                             link: 'https://quanbai.com'
                         }

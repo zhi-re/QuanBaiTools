@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="/css/outdatedbrowser.min.css" />
         <div id="outdated"></div>
         <script src="/js/outdatedbrowser.js"></script>
-        
+
         <!-- 路由过渡 -->
         <style v-if="$store.state.setting.animations">
             .page-enter-active,
@@ -51,7 +51,14 @@
         </style>
         <!-- 夜间模式蒙层 -->
         <div v-if="$store.state.dark" class="dark-layer"></div>
-        <main>
+        <main v-if="isPc" style="height:100%;width:65%;">
+            <!-- 背景蒙层 -->
+            <div v-if="$store.state.setting.bg.layer" class="bg-layer"></div>
+            <Navbar />
+            <nuxt class="view" />
+            <Vfooter v-show="$route.path === '/'" />
+        </main>
+        <main v-if="!isPc">
             <!-- 背景蒙层 -->
             <div v-if="$store.state.setting.bg.layer" class="bg-layer"></div>
             <Navbar />
@@ -93,7 +100,8 @@ export default {
     },
     data() {
         return {
-            loading: true
+            loading: true,
+            isPc: true
         };
     },
     computed: {
@@ -133,7 +141,11 @@ export default {
             key: 'isMobile',
             value: isMobile
         });
-
+        if (process.browser) {
+            if (window.innerWidth < 700) {
+                this.isPc = false;
+            }
+        }
         // 判断frames
         if (process.browser) {
             if (window.frames.length != parent.frames.length) {

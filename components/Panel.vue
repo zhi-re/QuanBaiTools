@@ -1,7 +1,7 @@
 <template>
     <div class="panel" icon="person-outline">
         <div class="login-text">
-            <a href="https://quanbai.com" target="_blank" rel="noopener noreferrer">Powered by 全百</a>
+            <a href="https://tools.quanbai.com" target="_self" rel="noopener noreferrer">简单 · 好用</a>
         </div>
     </div>
 </template>
