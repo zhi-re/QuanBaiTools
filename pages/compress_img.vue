@@ -4,7 +4,7 @@
             <el-upload
                 class="upload-demo"
                 drag
-                action="tools/ysImg"
+                :action="ysUrl"
                 multiple
                 :name="fileName"
                 :before-upload="beforeUpload"
@@ -47,6 +47,8 @@ export default {
     },
     data() {
         return {
+            ysUrl: '',
+            downloadUrl: '',
             fileName: 'file'
         };
     },
@@ -57,6 +59,10 @@ export default {
         }
     },
     mounted() {
+        let host = 'https://' + window.location.host;
+        console.log('host：' + host);
+        this.ysUrl = host + '/tools/ysImg';
+        this.downloadUrl = host + '/tools/download?filename=';
     },
     methods: {
         beforeUpload(file) {
@@ -82,7 +88,7 @@ export default {
                 return;
             }
             console.log('res:' + response);
-            window.location.href = 'tools/download?filename=' + response;
+            window.location.href = this.downloadUrl + response;
         }
     }
 };
