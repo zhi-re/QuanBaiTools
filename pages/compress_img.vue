@@ -4,7 +4,7 @@
             <el-upload
                 class="upload-demo"
                 drag
-                action="http://127.0.0.1:8080/tools/ysImg"
+                action="tools/ysImg"
                 multiple
                 :name="fileName"
                 :before-upload="beforeUpload"
@@ -82,8 +82,7 @@ export default {
                 return;
             }
             console.log('res:' + response);
-            window.location.href =
-                'http://127.0.0.1:8080/tools/download?filename=' + response;
+            window.location.href = 'tools/download?filename=' + response;
         }
     }
 };

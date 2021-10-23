@@ -24,12 +24,7 @@ export default {
         };
     },
     mounted() {
-        axios.get('/data.json').then(response => {
-            let data = response.data;
-            var arrList = Object.values(data); //对象转化为数组
-            let random = arrList[Math.random() * arrList.length | 0];
-            this.info = random;
-        });
+        this.getData();
     },
     methods: {
         getData: function getData() {
