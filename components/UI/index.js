@@ -8,6 +8,9 @@ import nyaRadio from './nya-radio/nya-radio.vue';
 import nyaRadioGroup from './nya-radio/nya-radio-group.vue';
 import nyaCopy from './nya-copy.vue';
 import nyaCircle from './nya-circle.vue';
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI);
 
 export default () => {
     Vue.component('nya-copy', nyaCopy);

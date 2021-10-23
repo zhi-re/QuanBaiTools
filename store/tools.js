@@ -83,18 +83,18 @@ export const state = () => {
                         description: '帮你百度'
                     }
                 },
-                {
-                    name: 'SS/R/V2ray 配置解析',
-                    path: '/ssr_decode',
-                    head: {
-                        keywords: [
-                            'SSR配置解密',
-                            'SS配置解密',
-                            'V2ray配置解密'
-                        ],
-                        description: '在线SSR配置解析'
-                    }
-                },
+                // {
+                //     name: 'SS/R/V2ray 配置解析',
+                //     path: '/ssr_decode',
+                //     head: {
+                //         keywords: [
+                //             'SSR配置解密',
+                //             'SS配置解密',
+                //             'V2ray配置解密'
+                //         ],
+                //         description: '在线SSR配置解析'
+                //     }
+                // },
                 {
                     name: '亲戚关系计算器',
                     path: '/relatives_name',
@@ -191,6 +191,14 @@ export const state = () => {
             icon: 'image-outline',
             list: [
                 {
+                    name: '图片无损压缩',
+                    path: '/compress_img',
+                    head: {
+                        keywords: ['图片无损压缩', '图片压缩', '大图压缩'],
+                        description: '图片无损压缩'
+                    }
+                },
+                {
                     name: '九宫格切图',
                     path: '/img_jiugongge',
                     head: {
@@ -240,7 +248,7 @@ export const state = () => {
                     }
                 },
                 {
-                    name: 'Pornhub 风格Logo',
+                    name: 'P站风格Logo',
                     path: '/pornhub_logo',
                     head: {
                         keywords: ['PornHub 风格图片制作', 'PornHub Logo 制作'],
@@ -248,7 +256,7 @@ export const state = () => {
                     }
                 },
                 {
-                    name: 'YouTube 风格Logo',
+                    name: '有图比风格Logo',
                     path: '/youtube_logo',
                     head: {
                         keywords: ['YouTube 风格图片制作', 'YouTube Logo 制作'],
@@ -256,7 +264,7 @@ export const state = () => {
                     }
                 },
                 {
-                    name: '视频转 GIF',
+                    name: '视频转GIF',
                     path: '/video2gif',
                     head: {
                         keywords: ['视频转换GIF图片'],
@@ -264,7 +272,7 @@ export const state = () => {
                     }
                 },
                 {
-                    name: 'GIF 图片分解',
+                    name: 'GIF图片分解',
                     path: '/gif_splitter',
                     head: {
                         keywords: ['GIF图片分解'],
@@ -280,7 +288,7 @@ export const state = () => {
                     }
                 },
                 {
-                    name: '抖音风格文字生成',
+                    name: '抖音风格文字',
                     path: '/douyin_text',
                     head: {
                         keywords: ['抖音风格文字生成', '抖音样式文字生成'],
@@ -343,7 +351,7 @@ export const state = () => {
                     }
                 },
                 {
-                    name: 'Markdown 编辑器',
+                    name: 'Markdown编辑器',
                     path: '/markdown',
                     head: {
                         keywords: ['Markdown编辑器'],
@@ -381,7 +389,7 @@ export const state = () => {
             icon: 'code-outline',
             list: [
                 {
-                    name: 'CSS 兼容性处理',
+                    name: 'CSS兼容性处理',
                     path: '/autoprefixer',
                     head: {
                         keywords: ['CSS兼容性处理', 'autoprefixer', 'postcss'],
@@ -397,7 +405,7 @@ export const state = () => {
                     }
                 },
                 {
-                    name: 'URL 格式化',
+                    name: 'URL格式化',
                     path: '/url_format',
                     head: {
                         keywords: ['URL 格式化', 'URL参数查看'],
@@ -431,7 +439,7 @@ export const state = () => {
                     }
                 },
                 {
-                    name: 'Linux 命令查询',
+                    name: 'Linux命令查询',
                     path: '/linux_command',
                     head: {
                         keywords: ['Linux命令查询'],
@@ -451,7 +459,7 @@ export const state = () => {
                     }
                 },
                 {
-                    name: '执行 Cron 表达式',
+                    name: '执行Cron表达式',
                     path: '/crontab',
                     head: {
                         keywords: ['在线执行Cron表达式', '在线模拟Cron表达式'],
@@ -474,7 +482,7 @@ export const state = () => {
                     }
                 },
                 {
-                    name: 'CIDR 计算',
+                    name: 'CIDR计算',
                     path: '/cidr',
                     head: {
                         keywords: [
@@ -489,7 +497,7 @@ export const state = () => {
                     }
                 },
                 {
-                    name: 'UserAgent 解析',
+                    name: 'UserAgent解析',
                     path: '/ua_parser',
                     head: {
                         keywords: ['在线 UserAgent 解析'],
@@ -512,7 +520,7 @@ export const state = () => {
                 //     }
                 // },
                 {
-                    name: 'JSON 编辑器',
+                    name: 'JSON编辑器',
                     path: '/json_editor',
                     head: {
                         keywords: ['在线JSON编辑器', 'JSON格式化', 'JSON压缩'],
@@ -542,9 +550,13 @@ export const state = () => {
                     path: '/hide_tool'
                 },
                 {
-                    name: '友情链接',
-                    path: '/links'
+                    name: '关于',
+                    path: '/about'
                 }
+                // {
+                //     name: '友情链接',
+                //     path: '/links'
+                // }
             ]
         }
     ];
