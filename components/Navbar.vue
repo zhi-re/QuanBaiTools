@@ -3,7 +3,7 @@
         <header>
             <h1 class="title">
                 <nuxt-link to="/">
-                    全百工具
+                    炙热工具
                 </nuxt-link>
             </h1>
             <Panel />

@@ -2,18 +2,18 @@
     <div class="links">
         <nya-container title="关于">
             <ul class="nya-list">
-                <li>关于我：后端开发工程师
-                    <a href="https://quanbai.com" target="_blank" rel="noopener noreferrer"
+                <li>关于我：
+                    <a href="https://www.yld.net" target="_blank" rel="noopener noreferrer"
                     >我的博客
                     </a>
                 </li>
-                <li>关于本工具：基于开源项目
-                    <a href="https://github.com/Ice-Hazymoon/MikuTools"
-                       target="_blank" rel="noopener noreferrer"
-                    >MikuTools
-                    </a>
-                    修改而来 非常感谢
-                </li>
+<!--                <li>关于本工具：基于开源项目-->
+<!--                    <a href="https://github.com/Ice-Hazymoon/MikuTools"-->
+<!--                       target="_blank" rel="noopener noreferrer"-->
+<!--                    >MikuTools-->
+<!--                    </a>-->
+<!--                    而来-->
+<!--                </li>-->
             </ul>
         </nya-container>
 
@@ -42,9 +42,9 @@ export default {
                     title: '维护',
                     list: [
                         {
-                            name: '全百',
-                            description: '全心 百分',
-                            link: 'https://quanbai.com'
+                            name: '炙热',
+                            description: '炙热工具',
+                            link: 'https://tool.zhi.re'
                         }
                     ]
                 },
@@ -52,9 +52,8 @@ export default {
                     title: '更新日志',
                     list: [
                         {
-                            name: '全百',
-                            description: '全心 百分',
-                            // link: 'https://quanbai.com'
+                            name: '炙热',
+                            description: '炙热工具'
                         }
                     ]
                 },
@@ -63,7 +62,7 @@ export default {
                     list: [
                         {
                             name: '本站基于',
-                            description: 'QuanBaiTools',
+                            description: 'ZhiReTools',
                             link: 'https://github.com/zhi-re/QuanBaiTools'
                         }
                     ]

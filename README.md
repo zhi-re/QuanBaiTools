@@ -1,4 +1,4 @@
-<h1 align="center">QuanBai Tools</h1>
+<h1 align="center">Zhi.Re Tools</h1>
 <p align="center">工具集合</p>
 
 
@@ -6,7 +6,7 @@
 
 本项目是基于 [https://miku.tools](https://miku.tools) 的开源版本修改。
 
-> [https://tools.quanbai.com](https://tools.quanbai.com)
+> [https://tool.zhi.re](https://tool.zhi.re)
 
 
 ## 开发

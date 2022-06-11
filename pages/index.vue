@@ -78,9 +78,9 @@
                         rel="noopener noreferrer"
                     >{{ $store.state.env.domain }}</a>
                 </li>
-                <li>
-                    短域名：<a href="https://tool.sb">tool.sb</a>
-                </li>
+<!--                <li>-->
+<!--                    短域名：<a href="https://tool.zhi.re">tool.zhi.re</a>-->
+<!--                </li>-->
                 <li v-if="$store.state.isMobile.any">
                     如果遇到无法使用或者样式问题，请更换浏览器后重试，推荐使用 Chrome 浏览器，对 iOS 设备兼容性可能不太好
                 </li>

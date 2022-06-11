@@ -111,14 +111,14 @@ export const state = () => {
                         description: '二维码生成/解析'
                     }
                 },
-                {
-                    name: '这是什么动漫',
-                    path: '/what_anime_is_this',
-                    head: {
-                        keywords: ['根据截图搜索动漫', 'whatanime'],
-                        description: '根据截图搜索动漫'
-                    }
-                },
+                // {
+                //     name: '这是什么动漫',
+                //     path: '/what_anime_is_this',
+                //     head: {
+                //         keywords: ['根据截图搜索动漫', 'whatanime'],
+                //         description: '根据截图搜索动漫'
+                //     }
+                // },
                 {
                     name: '中国传统色',
                     path: '/china_colors',
@@ -578,7 +578,7 @@ export const state = () => {
             }
             if (tool.head.keywords) {
                 tool.head.keywords = tool.head.keywords.concat([
-                    '全百工具',
+                    '炙热工具',
                     'chenqi',
                     '在线工具'
                 ]);

@@ -7,7 +7,7 @@ const link = console.style.wrap(
     'GitHub: https://github.com/zhi-re/QuanBaiTools',
     'font-size: 16px;font-style: italic;margin-bottom: 16px;font-weight: bold;'
 );
-console.style(`<css="${css}">全百工具</css>${link}`);
+console.style(`<css="${css}">炙热工具</css>${link}`);
 
 console.style(
     `<css="font-size:20px;color:red;font-weight:bold;">请不要在此执行任何可疑代码，以免造成不可挽回的严重后果</css>`

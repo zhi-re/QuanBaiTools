@@ -24,7 +24,7 @@ module.exports = {
      ** Headers of the page
      */
     head: {
-        title: `全百工具`,
+        title: `炙热工具`,
         meta: [
             {
                 charset: 'utf-8'
@@ -56,7 +56,7 @@ module.exports = {
             },
             {
                 property: 'og:site_name',
-                content: 'QuanBaiTools'
+                content: 'ZhiReTools'
             },
             {
                 name: 'mobile-web-app-capable',
@@ -64,7 +64,7 @@ module.exports = {
             },
             {
                 name: 'apple-mobile-web-app-title',
-                content: 'QuanBaiTools'
+                content: 'ZhiReTools'
             },
             {
                 name: 'apple-mobile-web-app-status-bar-style',
@@ -213,8 +213,8 @@ module.exports = {
     manifest: {
         description: '收集实用的小工具',
         display: 'standalone',
-        name: 'QuanBaiTools',
-        short_name: 'QuanBaiTools',
+        name: 'ZhiReTools',
+        short_name: 'ZhiReTools',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#ffffff',

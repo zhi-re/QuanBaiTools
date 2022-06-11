@@ -1,7 +1,7 @@
 <template>
     <div class="panel" icon="person-outline">
         <div class="login-text">
-            <a href="https://tool.sb" target="_self" rel="noopener noreferrer">简单 · 好用</a>
+            <a href="https://tool.zhi.re" target="_self" rel="noopener noreferrer">简单 · 好用</a>
         </div>
     </div>
 </template>

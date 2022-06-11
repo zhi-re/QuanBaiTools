@@ -49,9 +49,9 @@ export default {
                     title: '维护',
                     list: [
                         {
-                            name: '全百',
-                            description: '全心 百分',
-                            link: 'https://quanbai.com'
+                            name: '炙热',
+                            description: '炙热工具',
+                            link: 'https://tool.zhi.re'
                         }
                     ]
                 },

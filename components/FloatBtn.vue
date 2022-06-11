@@ -4,9 +4,9 @@
             <li title="代码" @click="$modal.show('code')">
                 <i class="eva eva-code"></i>
             </li>
-            <li title="打赏" @click="$modal.show('pay')">
-                <i class="eva eva-gift"></i>
-            </li>
+            <!-- <li title="打赏" @click="$modal.show('pay')">
+              <i class="eva eva-gift"></i>
+          </li> -->
             <li title="分享" @click="share">
                 <i class="eva eva-share"></i>
                 <span></span>
@@ -21,13 +21,16 @@
                 <div class="title">
                     将以下代码放到你的网页中
                 </div>
-                <Dynamic tag="pre" :template="iframeText" />
+                <Dynamic tag="pre" :template="iframeText"/>
             </modal>
             <modal class="pay" name="pay" height="auto" width="300" reset adaptive>
                 <div class="title">
                     请作者喝一杯咖啡？
                 </div>
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPkAAAD5AQMAAADfgQHTAAAABlBMVEX///8AAABVwtN+AAABKElEQVRo3u3YQRLCIAwF0HTFMTyqHpVjuGqEz29Sd0G3P+NgCW+VYSCtOeNtZo8crvRLgGD8DOljqaf7CTXjENgBo6xjmGu9eUzhBX4EvoZD4B+AiVGZwD5AOo/PMW3wyArsAAa2ag7MCtTBV7TTnh0FjhCoAtQ2DtJYm2p4gTpgc9RtdUhQyFEJVAFOTsS9yte5KrABvGNvtug6F7g2rUARxOXuZwwzopMXKIL5H7cRiw6xLieBKsjWna/j8FjDgkAZxJWOKnOYOWPlBaog3nry+HRGNxMog4wJkJ5+ThEvgSpwBvsiqCi6QBnk5X7/RIRSs38SKIOsLTJU8dlIYBvYCIDo35ET2AbYqli77iU8CZQB0ixw9Eq5hwXKgJFnaPP7y7pAEXwAEcs7OSsUWygAAAAASUVORK5CYII=" alt="pay">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPkAAAD5AQMAAADfgQHTAAAABlBMVEX///8AAABVwtN+AAABKElEQVRo3u3YQRLCIAwF0HTFMTyqHpVjuGqEz29Sd0G3P+NgCW+VYSCtOeNtZo8crvRLgGD8DOljqaf7CTXjENgBo6xjmGu9eUzhBX4EvoZD4B+AiVGZwD5AOo/PMW3wyArsAAa2ag7MCtTBV7TTnh0FjhCoAtQ2DtJYm2p4gTpgc9RtdUhQyFEJVAFOTsS9yte5KrABvGNvtug6F7g2rUARxOXuZwwzopMXKIL5H7cRiw6xLieBKsjWna/j8FjDgkAZxJWOKnOYOWPlBaog3nry+HRGNxMog4wJkJ5+ThEvgSpwBvsiqCi6QBnk5X7/RIRSs38SKIOsLTJU8dlIYBvYCIDo35ET2AbYqli77iU8CZQB0ixw9Eq5hwXKgJFnaPP7y7pAEXwAEcs7OSsUWygAAAAASUVORK5CYII="
+                    alt="pay"
+                >
             </modal>
             <modal class="phone" name="phone" height="auto" width="300" reset adaptive>
                 <div class="title">
@@ -40,15 +43,33 @@
                     分享当前工具到
                 </div>
                 <div class="list">
-                    <a :href="`http://connect.qq.com/widget/shareqq/index.html?url=${shareData.url}&desc=${shareData.title}&pics=${shareData.pic}`" target="_blank" rel="noopener noreferrer">QQ</a>
-                    <a :href="`http://qr.liantu.com/api.php?text=${shareData.url}`" target="_blank" rel="noopener noreferrer">微信</a>
-                    <a :href="`http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=${shareData.url}&title=${shareData.title}&pics${shareData.pic}=&summary=${shareData.content}`" target="_blank" rel="noopener noreferrer">QQ空间</a>
-                    <a :href="`http://service.weibo.com/share/share.php?url=${shareData.url}&title=${shareData.title}&pic=${shareData.pic}&searchPic=false`" target="_blank" rel="noopener noreferrer">微博</a>
-                    <a :href="`http://www.douban.com/share/service?href=${shareData.url}&name=${shareData.title}&text=${shareData.content}&image=${shareData.pic}`" target="_blank" rel="noopener noreferrer">豆瓣</a>
-                    <a :href="`http://widget.renren.com/dialog/share?resourceUrl=${shareData.url}&srcUrl=${shareData.url}&title=${shareData.title}&description=${shareData.content}`" target="_blank" rel="noopener noreferrer">人人</a>
-                    <a :href="`https://twitter.com/intent/tweet?text=${shareData.title}&url=${shareData.url}`" target="_blank" rel="noopener noreferrer">Twitter</a>
-                    <a :href="`https://www.facebook.com/sharer/sharer.php?u=${shareData.url}&t=${shareData.title}&pic=${shareData.pic}`" target="_blank" rel="noopener noreferrer">Facebook</a>
-                    <a :href="`https://www.linkedin.com/shareArticle?title=${shareData.title}&summary=${shareData.content}&mini=true&url=${shareData.url}&ro=true`" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                    <a :href="`http://connect.qq.com/widget/shareqq/index.html?url=${shareData.url}&desc=${shareData.title}&pics=${shareData.pic}`"
+                       target="_blank" rel="noopener noreferrer"
+                    >QQ</a>
+                    <a :href="`http://qr.liantu.com/api.php?text=${shareData.url}`" target="_blank"
+                       rel="noopener noreferrer"
+                    >微信</a>
+                    <a :href="`http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=${shareData.url}&title=${shareData.title}&pics${shareData.pic}=&summary=${shareData.content}`"
+                       target="_blank" rel="noopener noreferrer"
+                    >QQ空间</a>
+                    <a :href="`http://service.weibo.com/share/share.php?url=${shareData.url}&title=${shareData.title}&pic=${shareData.pic}&searchPic=false`"
+                       target="_blank" rel="noopener noreferrer"
+                    >微博</a>
+                    <a :href="`http://www.douban.com/share/service?href=${shareData.url}&name=${shareData.title}&text=${shareData.content}&image=${shareData.pic}`"
+                       target="_blank" rel="noopener noreferrer"
+                    >豆瓣</a>
+                    <a :href="`http://widget.renren.com/dialog/share?resourceUrl=${shareData.url}&srcUrl=${shareData.url}&title=${shareData.title}&description=${shareData.content}`"
+                       target="_blank" rel="noopener noreferrer"
+                    >人人</a>
+                    <a :href="`https://twitter.com/intent/tweet?text=${shareData.title}&url=${shareData.url}`"
+                       target="_blank" rel="noopener noreferrer"
+                    >Twitter</a>
+                    <a :href="`https://www.facebook.com/sharer/sharer.php?u=${shareData.url}&t=${shareData.title}&pic=${shareData.pic}`"
+                       target="_blank" rel="noopener noreferrer"
+                    >Facebook</a>
+                    <a :href="`https://www.linkedin.com/shareArticle?title=${shareData.title}&summary=${shareData.content}&mini=true&url=${shareData.url}&ro=true`"
+                       target="_blank" rel="noopener noreferrer"
+                    >Linkedin</a>
                 </div>
             </modal>
         </client-only>
@@ -145,11 +166,13 @@ export default {
     position: fixed;
     right: 20px;
     bottom: 30px;
+
     &:hover {
         ul {
             opacity: 1;
         }
     }
+
     .code {
         pre {
             margin-bottom: 0;
@@ -158,6 +181,7 @@ export default {
             background-color: #282c34;
         }
     }
+
     ul {
         margin: 0 auto;
         padding: 0;
@@ -169,6 +193,7 @@ export default {
         @media (max-width: 600px) {
             display: none;
         }
+
         li {
             cursor: pointer;
             list-style: none;
@@ -186,6 +211,7 @@ export default {
             align-items: center;
         }
     }
+
     .main {
         cursor: pointer;
         width: 55px;
@@ -193,15 +219,17 @@ export default {
         background-color: var(--theme);
         border-radius: 50%;
         box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
-            1px 3px 8px rgba(39, 44, 49, 0.03);
+        1px 3px 8px rgba(39, 44, 49, 0.03);
         display: flex;
         align-items: center;
         justify-content: center;
+
         i {
             font-size: 20px;
             color: #eeeeee;
         }
     }
+
     .title {
         font-size: 18px;
         font-weight: bold;
@@ -211,6 +239,7 @@ export default {
         border-bottom: 1px solid #d8d8d8;
         color: #222831;
     }
+
     .pay,
     .phone {
         img {
@@ -219,9 +248,11 @@ export default {
             width: 100%;
         }
     }
+
     .share {
         .list {
             padding: 8px;
+
             a {
                 display: inline-block;
                 margin: 8px;

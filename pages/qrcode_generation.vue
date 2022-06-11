@@ -5,7 +5,7 @@
                 <nya-input
                     v-model.trim="qrcodeText"
                     label="请输入要生成的内容"
-                    placeholder="https://quanbai.com"
+                    placeholder="https://tool.zhi.re"
                     autocomplete="off"
                     autofocus
                     @keyup.enter="generation"
